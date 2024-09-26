@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+    font-family: "Inter", sans-serif;
+  }
+  .sidebar::-webkit-scrollbar{
+    width: 9px;
+    height: 15rem;
+    cursor: pointer;
+    
+  }
+  .sidebar::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    border-radius: 20px;
+  }
+  .sidebar:hover::-webkit-scrollbar-thumb{
+    width: 9px;
+    height: 15rem;
+    cursor: pointer;
+    background-color: #0F1D44;
+  }
+  .cardShadow{
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  }
+  .card {
+    background-image: url('/coverVoice.svg');
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    height: 28rem;
+    width: 23rem;
+  }
+  
+  .voicescript::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+    cursor: pointer;
+    
+  }
+  .voicescript::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    
+  }
