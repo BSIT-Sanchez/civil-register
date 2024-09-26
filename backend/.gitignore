@@ -1,1 +1,29 @@
+# Environment variables
 .env
+
+# Node modules
+node_modules/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+
+# Build directories (if you're building for production)
+dist/
+build/
+
+# Database (if using SQLite for development)
+*.sqlite
+*.sqlite3
+
+# Testing coverage
+coverage/
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
