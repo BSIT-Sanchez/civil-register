@@ -13,7 +13,13 @@ databaseConnection().then(() => console.log('Database connected')).catch(err => 
 
 const app = express();
 
-app.use(cors());
+app.use(cors(
+  {
+        origin: ["https://human-resources4-backend.vercel.app"],
+        methods: ['POST', 'GET'],
+        credentials: true
+    }
+));
 app.use(express.json()); // Use express.json() instead of bodyParser
 app.use(express.urlencoded({ extended: true }));
 
